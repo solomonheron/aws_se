@@ -1,0 +1,19 @@
+Kubernetes:
+
+Go to PowerShell type:
+
+minikube start
+
+kubectl create deployment myapp --image=nginx:alpine
+
+kubectl scale deployment myapp --replicas=3
+
+kubectl expose deployment myapp --port=80 --type=NodePort
+
+kubectl get svc
+
+minikube service myapp
+
+Nagios:
+docker pull jasonrivers/nagios
+docker run -d --name nagios -p 8080:80 jasonrivers/nagios
