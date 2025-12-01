@@ -1,0 +1,12 @@
+clone repo link https://github.com/Jaichey/Maven_jenkins.git
+
+command: git clone https://github.com/Jaichey/Maven_jenkins.git
+
+Now open that clone folder in Maven
+
+Next open local terminal by right clicking on your folder name
+
+Next run the commands:
+
+mvn clean
+mvn install
