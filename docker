@@ -1,0 +1,23 @@
+-> Folder Create
+
+Docker_ex
+ - usr
+    - shared
+ - Dockerfile
+
+-> Now in Dockerfile type:
+
+FROM nginx:alpine
+COPY usr/shared /usr/share/nginx/html/
+
+-> open docker desktop
+
+-> now open Docker_ex in powershell
+
+-> next type
+
+docker build -t test_image_docker .
+
+docker run -d -p 9090:80 test_image_docker
+
+open localhost:9090 in browser
