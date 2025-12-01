@@ -1,0 +1,32 @@
+Open Jenkins Dashboard
+
+Click New Item
+
+Enter project name
+
+Select Freestyle project → OK
+
+Go to Source Code Management → Select Git
+
+Enter repository URL
+
+Under Build Environment, choose the correct JDK
+
+Go to Build → Add build step
+
+Select Invoke top-level Maven targets
+
+In Goals, enter:
+
+clean test install
+
+
+(Optional) Add test reports:
+Post-build Actions → Publish JUnit test result report
+
+**/target/surefire-reports/*.xml
+
+
+Click Save
+
+Click Build Now
